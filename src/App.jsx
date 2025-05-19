@@ -7,10 +7,7 @@ import Footer from './Components/Footer.jsx';
 
 const App = () => {
 
-  const [TransactionArray, setTransactionArray] = useState([
-    { id: 1, Amount: 25000, Type: 'Income', Description: 'Salary', Date: '25/05/2025' },
-    { id: 2, Amount: 2500000, Type: 'Income', Description: 'Salary', Date: '25/05/2025' }
-  ])
+  const [TransactionArray, setTransactionArray] = useState([]);
 
   const [Edit, setEdit] = useState({
     Transactions: {},

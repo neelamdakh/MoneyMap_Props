@@ -3,7 +3,16 @@ import React from 'react'
 import TransactionListItem from './TransactionListItem';
 
 const Transaction = ({TransactionArray,removeTransaction,editTransaction}) => {
-  
+  if(TransactionArray.length ===0)
+  {
+    return(
+      <>
+    <div className='bg-gray-300 p-8 m-4 shadow-xl rounded-sm'>
+          <h1 className='text-md text-center text-teal-800 uppercase'>No Transactions</h1>
+    </div>
+    </>
+  )}
+  else
   return (
     <>
         <div className='bg-gray-300 p-8 m-4 shadow-xl rounded-sm'>
